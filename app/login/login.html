@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My AngularJS App</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="../bower_components/html5-boilerplate/dist/css/normalize.css"/>
+  <link rel="stylesheet" type="text/css" href="../bower_components/html5-boilerplate/dist/css/main.css"/>
+  <link rel="stylesheet" type="text/css" href="../bower_components/bootstrap/css/bootstrap.css"/>
+  <link rel="stylesheet" type="text/css" href="../app.css"/>
+  <script type="text/javascript" src="../bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../bower_components/angular/angular.js"></script>
+  <script type="text/javascript" src="../bower_components/angular-route/angular-route.js"></script>
+  <script type="text/javascript" src="../app.js"></script>
+  <script type="text/javascript" src="loginCont.js"></script>
+</head>
+<body>
+  <form action="/login" method="post" class="form-signin">
+  	 <h2 class="form-signin-heading">Please sign in</h2>
+      <label for="inputEmail" class="sr-only">Username</label>
+      <input type="text" id="inputEmail" name="username" class="form-control" placeholder="Username" required="" autofocus="">
+      <label for="inputPassword" class="sr-only">Password</label>
+      <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Password" required="">
+      <button class="btn btn-lg btn-primary btn-block" value="Login" type="submit">Login</button>
+  </form>
+</body>
+</html>
